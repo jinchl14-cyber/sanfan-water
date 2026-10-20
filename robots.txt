@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://jinchl14-cyber.github.io/sanfan-water/sitemap.xml
