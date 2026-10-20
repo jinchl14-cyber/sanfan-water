@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>合肥三番水处理设备有限公司 - 水处理设备研发制造</title>
+<meta name="description" content="合肥三番水处理设备有限公司成立于2004年，国家高新技术企业，专注曝气生物滤池、V型滤池、D型滤池、高效沉淀池等水处理设备的研发、生产、安装与销售。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0' stop-color='%230E4C6B'/%3E%3Cstop offset='1' stop-color='%2312A5B0'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cpath fill='url(%23g)' d='M32 4 C42 16 52 26 52 38 a20 20 0 1 1 -40 0 C12 26 22 16 32 4 Z'/%3E%3Ccircle cx='32' cy='40' r='7' fill='%23ffffff' opacity='0.75'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://miaoda.feishu.cn">
+<link rel="stylesheet" href="https://miaoda.feishu.cn/fonts/css2?family=Noto+Sans+SC:wght@300;400;500;700;900&display=swap">
+<style>
+:root{
+  --deep:#0E4C6B;
+  --deep-2:#08394F;
+  --teal:#12A5B0;
+  --teal-soft:#E3F3F4;
+  --bg:#F4F8FA;
+  --card:#FFFFFF;
+  --ink:#16313F;
+  --ink-2:#5B7A87;
+  --line:#DCE7EC;
+  --serif:'Noto Sans SC','PingFang SC','Microsoft YaHei',system-ui,sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--serif);color:var(--ink);background:var(--bg);line-height:1.7;-webkit-font-smoothing:antialiased;font-size:16px}
+img{display:block;max-width:100%}
+a{text-decoration:none;color:inherit}
+.wrap{max-width:1120px;margin:0 auto;padding:0 22px}
+
+/* ===== 顶部导航 ===== */
+.nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,0.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;height:64px}
+.brand{display:flex;align-items:center;gap:10px}
+.brand svg{width:30px;height:30px;flex:none}
+.brand-name{font-weight:700;font-size:17px;letter-spacing:.02em}
+.brand-sub{font-size:11px;color:var(--ink-2);letter-spacing:.1em}
+.nav-links{display:flex;align-items:center;gap:26px}
+.nav-links a{font-size:14.5px;color:var(--ink);font-weight:500;position:relative}
+.nav-links a:hover{color:var(--teal)}
+.nav-toggle{display:none;background:none;border:0;cursor:pointer;padding:6px}
+.nav-toggle span{display:block;width:22px;height:2px;background:var(--ink);margin:5px 0;border-radius:2px}
+
+/* ===== Hero ===== */
+.hero{position:relative;color:#fff;overflow:hidden;background:var(--deep-2)}
+.hero-bg{position:absolute;inset:0;background-image:url('assets/hero.jpg');background-size:cover;background-position:center;opacity:.42}
+.hero::before{content:'';position:absolute;inset:0;background:linear-gradient(100deg,rgba(8,57,79,.92) 0%,rgba(8,57,79,.55) 55%,rgba(8,57,79,.25) 100%)}
+.hero-wave{position:absolute;bottom:-1px;left:0;right:0;color:#F4F8FA}
+.hero-inner{position:relative;padding-block:96px 128px;max-width:820px}
+.hero-eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:13px;letter-spacing:.18em;color:#7FDCE2;font-weight:500;margin-bottom:22px}
+.hero-eyebrow::before{content:'';width:26px;height:2px;background:#12A5B0}
+.hero h1{font-size:42px;line-height:1.2;font-weight:900;letter-spacing:.01em;margin-bottom:18px}
+.hero p{font-size:17px;color:rgba(255,255,255,.88);max-width:640px;margin-bottom:34px}
+.hero-cta{display:flex;gap:16px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:13px 30px;border-radius:6px;font-weight:700;font-size:15px;transition:.2s}
+.btn-solid{background:var(--teal);color:#fff}
+.btn-solid:hover{background:#0E8F99}
+.btn-ghost{border:1px solid rgba(255,255,255,.6);color:#fff}
+.btn-ghost:hover{background:rgba(255,255,255,.12)}
+.hero-stats{position:relative;display:grid;grid-template-columns:repeat(2,1fr);gap:0;margin-top:64px;border:1px solid rgba(255,255,255,.22);border-radius:8px;overflow:hidden}
+.stat{background:rgba(255,255,255,.06);padding:22px 26px}
+.stat+.stat{border-left:1px solid rgba(255,255,255,.22)}
+.stat b{display:block;font-size:30px;font-weight:900;color:#fff;line-height:1.15}
+.stat b em{font-style:normal;font-size:16px;font-weight:700;color:#7FDCE2;margin-left:3px}
+.stat span{font-size:12.5px;color:rgba(255,255,255,.72);letter-spacing:.06em}
+
+/* ===== 通用 section ===== */
+.section{padding:84px 0}
+.section-head{margin-bottom:44px;max-width:720px}
+.kicker{display:flex;align-items:center;gap:10px;font-size:13px;font-weight:700;letter-spacing:.16em;color:var(--teal);margin-bottom:14px}
+.kicker::before{content:'';width:24px;height:2px;background:var(--teal)}
+.section-head h2{font-size:32px;font-weight:900;line-height:1.25;letter-spacing:.01em;margin-bottom:14px}
+.section-head p{color:var(--ink-2);font-size:16px}
+
+/* ===== 关于我们 ===== */
+.about-grid{display:grid;grid-template-columns:1fr;gap:36px;align-items:start}
+.about-copy{font-size:16px;color:#2B4A58}
+.about-copy p{margin-bottom:16px}
+.about-copy p:last-child{margin-bottom:0}
+.about-lead{font-size:18px;font-weight:700;color:var(--deep);line-height:1.8;margin-bottom:18px}
+.badge-list{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+.badge{display:inline-flex;align-items:center;gap:7px;background:var(--teal-soft);color:var(--deep);border:1px solid #C5E6E8;border-radius:999px;padding:8px 16px;font-size:13.5px;font-weight:600}
+.badge svg{width:15px;height:15px;flex:none;color:var(--teal)}
+.about-card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:28px 28px 8px}
+.about-card h3{font-size:15px;color:var(--ink-2);font-weight:600;letter-spacing:.05em;margin-bottom:20px}
+.about-card ul{list-style:none}
+.about-card li{display:flex;gap:12px;align-items:baseline;padding:14px 0;border-bottom:1px solid var(--line);font-size:15px}
+.about-card li:last-child{border-bottom:0}
+.about-card li b{color:var(--deep);font-weight:700;flex:none;min-width:76px;font-size:14px}
+.about-card li span{color:#34515F}
+
+/* ===== 核心产品 ===== */
+.product-section{background:var(--card)}
+.product-grid{display:grid;grid-template-columns:1fr;gap:22px}
+.product-card{display:flex;flex-direction:column;border:1px solid var(--line);border-radius:10px;overflow:hidden;background:#fff;transition:transform .25s,box-shadow .25s}
+.product-card:hover{transform:translateY(-4px);box-shadow:0 14px 34px rgba(14,76,107,.10)}
+.product-card .img{position:relative;aspect-ratio:3/2;overflow:hidden}
+.product-card .img img{width:100%;height:100%;object-fit:cover}
+.product-card .img .tag{position:absolute;top:14px;left:14px;background:rgba(14,76,107,.9);color:#fff;font-size:12px;font-weight:700;letter-spacing:.08em;padding:6px 12px;border-radius:4px}
+.product-body{padding:22px 24px 26px;display:flex;flex-direction:column;flex:1}
+.product-body h3{font-size:20px;font-weight:900;margin-bottom:10px;color:var(--deep)}
+.product-body p{font-size:14.5px;color:var(--ink-2);flex:1}
+.product-feat{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+.pf{font-size:12.5px;color:var(--deep);background:var(--teal-soft);padding:5px 11px;border-radius:4px;font-weight:600}
+
+/* ===== 子公司 ===== */
+.subsi-card{background:var(--deep);color:#fff;border-radius:12px;padding:38px 30px;display:grid;grid-template-columns:1fr;gap:22px;position:relative;overflow:hidden}
+.subsi-card::after{content:'';position:absolute;right:-70px;top:-70px;width:240px;height:240px;border-radius:50%;background:rgba(255,255,255,.07)}
+.subsi-card h3{font-size:23px;font-weight:900;margin-bottom:8px}
+.subsi-year{display:inline-flex;align-items:center;gap:8px;font-size:12.5px;color:#7FDCE2;font-weight:700;letter-spacing:.08em;margin-bottom:16px}
+.subsi-card p{color:rgba(255,255,255,.86);font-size:15px;max-width:600px}
+
+/* ===== 合作伙伴 ===== */
+.partner-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.partner{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:26px 20px;text-align:center;font-size:16px;font-weight:700;color:var(--deep);letter-spacing:.03em;transition:.2s}
+.partner:hover{border-color:var(--teal);color:var(--teal);transform:translateY(-2px)}
+.partner small{display:block;font-size:11px;color:var(--ink-2);font-weight:500;margin-top:4px;letter-spacing:.05em}
+
+/* ===== 联系方式 ===== */
+.contact-section{background:var(--deep-2);color:#fff}
+.contact-section .section-head h2{color:#fff}
+.contact-section .section-head p{color:rgba(255,255,255,.72)}
+.contact-grid{display:grid;grid-template-columns:1fr;gap:16px}
+.contact-item{display:flex;gap:18px;align-items:flex-start;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.16);border-radius:10px;padding:24px}
+.contact-item svg{width:24px;height:24px;flex:none;color:#7FDCE2;margin-top:2px}
+.contact-item b{display:block;font-size:13px;color:#7FDCE2;font-weight:600;letter-spacing:.08em;margin-bottom:6px}
+.contact-item span,.contact-item a{font-size:15.5px;color:#fff;line-height:1.6}
+.pending{color:rgba(255,255,255,.5);font-style:italic}
+
+/* ===== footer ===== */
+.footer{background:#062B3D;color:rgba(255,255,255,.6);padding:26px 0;font-size:13px}
+.footer .wrap{display:flex;flex-direction:column;gap:6px}
+.footer b{color:rgba(255,255,255,.9)}
+
+@media(min-width:768px){
+  .hero h1{font-size:52px}
+  .hero-stats{grid-template-columns:repeat(2,1fr)}
+  .about-grid{grid-template-columns:1.6fr 1fr;gap:48px}
+  .product-grid{grid-template-columns:repeat(2,1fr)}
+  .subsi-card{grid-template-columns:1.2fr 1fr;padding:44px 44px;align-items:center}
+  .partner-grid{grid-template-columns:repeat(4,1fr)}
+  .contact-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:767px){
+  .nav-links{display:none;position:absolute;top:64px;left:0;right:0;background:#fff;flex-direction:column;align-items:flex-start;padding:18px 22px;gap:18px;border-bottom:1px solid var(--line);box-shadow:0 12px 24px rgba(0,0,0,.06)}
+  .nav-links.open{display:flex}
+  .nav-toggle{display:block}
+  .hero-inner{padding-block:72px 110px}
+  .hero h1{font-size:33px}
+  .stat b{font-size:25px}
+}
+</style>
+</head>
+<body>
+
+<!-- ===== 顶部导航 ===== -->
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="#home" aria-label="返回首页">
+      <svg viewBox="0 0 64 64" aria-hidden="true"><defs><linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0E4C6B"/><stop offset="1" stop-color="#12A5B0"/></linearGradient></defs><path fill="url(#bg)" d="M32 4 C42 16 52 26 52 38 a20 20 0 1 1 -40 0 C12 26 22 16 32 4 Z"/><circle cx="32" cy="40" r="7" fill="#fff" opacity="0.75"/></svg>
+      <span>
+        <span class="brand-name">三番水处理</span>
+        <span class="brand-sub" style="display:block">SANFAN WATER</span>
+      </span>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="展开菜单" aria-expanded="false"><span></span><span></span><span></span></button>
+    <nav class="nav-links" id="navLinks">
+      <a href="#home">首页</a>
+      <a href="#about">关于我们</a>
+      <a href="#products">核心产品</a>
+      <a href="#subsidiary">子公司</a>
+      <a href="#partners">合作伙伴</a>
+      <a href="#contact">联系我们</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ===== Hero ===== -->
+<section class="hero" id="home">
+  <div class="hero-bg" aria-hidden="true"></div>
+  <div class="wrap hero-inner">
+    <div class="hero-eyebrow">国家高新技术企业 · 深耕水处理 20 余年</div>
+    <h1>专注水处理设备的<br>研发、生产、安装与销售</h1>
+    <p>合肥三番水处理设备有限公司成立于 2004 年，为市政给排水、工业废水治理及大型能源化工项目提供曝气生物滤池、V 型滤池、D 型滤池、高效沉淀池等专业设备与服务。</p>
+    <div class="hero-cta">
+      <a class="btn btn-solid" href="#products">了解核心产品</a>
+      <a class="btn btn-ghost" href="#contact">联系我们</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat"><b>2004<em>年</em></b><span>公司成立</span></div>
+      <div class="stat"><b>22<em>年</em></b><span>行业深耕</span></div>
+    </div>
+  </div>
+  <svg class="hero-wave" viewBox="0 0 1440 60" preserveAspectRatio="none" aria-hidden="true" style="height:46px;width:100%"><path fill="currentColor" d="M0,32 C240,60 480,4 720,20 C960,36 1200,8 1440,32 L1440,60 L0,60 Z"/></svg>
+</section>
+
+<!-- ===== 关于我们 ===== -->
+<section class="section" id="about">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="kicker">ABOUT US · 关于我们</div>
+      <h2>二十年匠心，专注洁净每一滴水</h2>
+      <p>一家集水处理设备研发、生产、安装与销售于一体的高新技术企业。</p>
+    </div>
+    <div class="about-grid">
+      <div class="about-copy">
+        <p class="about-lead">合肥三番水处理设备有限公司成立于 2004 年，坐落于安徽省合肥市高新区，是专业从事水处理设备生产、安装与销售的有限责任公司。</p>
+        <p>公司自创立以来深耕水处理领域，先后被评为国家高新技术企业、安徽省创新型企业、安徽省民营科技企业、瞪羚及科技小巨人培育企业。2020 年，公司成立全资子公司安徽三番环保工程有限公司，构建起「设备制造 + 环保工程」的一体化服务体系。</p>
+        <p>公司核心产品涵盖曝气生物滤池、V 型滤池、D 型滤池、高效沉淀池等，凭借稳定的产品质量与专业的技术服务，长期服务于中石化、中石油、中海油、神华集团等大型能源化工企业。</p>
+        <div class="badge-list">
+          <span class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6L9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg>国家高新技术企业</span>
+          <span class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6L9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg>安徽省创新型企业</span>
+          <span class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6L9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg>安徽省民营科技企业</span>
+          <span class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6L9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg>瞪羚及科技小巨人培育企业</span>
+          <span class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6L9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg>科技型中小企业</span>
+          <span class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6L9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg>小微企业</span>
+        </div>
+      </div>
+      <div class="about-card">
+        <h3>公司基本信息</h3>
+        <ul>
+          <li><b>成立时间</b><span>2004 年 2 月 27 日</span></li>
+          <li><b>法定代表人</b><span>罗加永</span></li>
+          <li><b>企业地址</b><span>安徽省合肥市高新区香樟大道 211 号<br>香枫创意园 C 幢 12 楼 1201</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 核心产品 ===== -->
+<section class="section product-section" id="products">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="kicker">CORE PRODUCTS · 核心产品</div>
+      <h2>四大核心设备，服务工业与市政水处理</h2>
+      <p>从给水净化到废水深度处理，覆盖过滤、沉淀的完整工艺环节。</p>
+    </div>
+    <div class="product-grid">
+      <article class="product-card">
+        <div class="img"><img src="assets/product-baf.jpg" alt="曝气生物滤池"><span class="tag">生物处理</span></div>
+        <div class="product-body">
+          <h3>曝气生物滤池</h3>
+          <p>利用微生物附着于滤料表面降解污染物的生物处理设备，通过曝气供氧高效去除有机物、氨氮与总氮，兼具过滤与生物处理功能，广泛应用于市政与工业废水处理。</p>
+          <div class="product-feat"><span class="pf">高效脱氮除磷</span><span class="pf">节省占地</span><span class="pf">运行稳定</span></div>
+        </div>
+      </article>
+      <article class="product-card">
+        <div class="img"><img src="assets/product-vfilter.jpg" alt="V型滤池"><span class="tag">给水过滤</span></div>
+        <div class="product-body">
+          <h3>V 型滤池</h3>
+          <p>采用均质滤料与气水反冲洗工艺的经典滤池，过滤效率高、出水水质稳定、反冲洗耗水少，广泛用于自来水厂与工业给水净化处理。</p>
+          <div class="product-feat"><span class="pf">出水水质优</span><span class="pf">气水反冲洗</span><span class="pf">自动化程度高</span></div>
+        </div>
+      </article>
+      <article class="product-card">
+        <div class="img"><img src="assets/product-dfilter.jpg" alt="D型滤池"><span class="tag">高效过滤</span></div>
+        <div class="product-body">
+          <h3>D 型滤池</h3>
+          <p>采用彗星式纤维滤料的高效过滤设备，截污能力强、过滤速度快、运行费用低，适用于给水处理及废水深度处理，是大型项目的可靠选择。</p>
+          <div class="product-feat"><span class="pf">过滤速度快</span><span class="pf">截污容量大</span><span class="pf">低运行费用</span></div>
+        </div>
+      </article>
+      <article class="product-card">
+        <div class="img"><img src="assets/product-sedimentation.jpg" alt="高效沉淀池"><span class="tag">固液分离</span></div>
+        <div class="product-body">
+          <h3>高效沉淀池</h3>
+          <p>集混凝、絮凝、沉淀于一体的高效固液分离设备，占地面积小、出水效果好，适用于高浊度水处理与废水处理工艺，可有效去除悬浮物与浊度。</p>
+          <div class="product-feat"><span class="pf">占地小</span><span class="pf">处理效率高</span><span class="pf">适应性广</span></div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 子公司 ===== -->
+<section class="section" id="subsidiary">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="kicker">SUBSIDIARY · 子公司</div>
+      <h2>设备制造 + 环保工程，一体化服务</h2>
+      <p>2020 年成立全资子公司，完善环保工程全链条交付能力。</p>
+    </div>
+    <div class="subsi-card">
+      <div>
+        <div class="subsi-year"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>成立于 2020 年 · 全资子公司</div>
+        <h3>安徽三番环保工程有限公司</h3>
+        <p>主营环保工程的设计、施工与技术服务，与母公司形成「设备制造 + 环保工程」一体化服务体系，为客户提供从设备供应到工程实施的整体解决方案。</p>
+      </div>
+      <svg viewBox="0 0 64 64" width="64" height="64" style="justify-self:end" aria-hidden="true"><path fill="none" stroke="#7FDCE2" stroke-width="2.5" stroke-linecap="round" d="M6 46 C16 30 20 30 32 44 C44 58 50 50 58 38"/><path fill="#7FDCE2" d="M32 44 C36 36 42 32 47 30 C41 36 36 40 33 46 C32.7 46.4 32 46.1 32 45.6 Z"/></svg>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 合作伙伴 ===== -->
+<section class="section product-section" id="partners">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="kicker">PARTNERS · 合作伙伴</div>
+      <h2>长期服务大型能源化工企业</h2>
+      <p>稳定的产品质量与专业的服务能力，赢得了行业头部客户的信任。</p>
+    </div>
+    <div class="partner-grid">
+      <div class="partner">中国石化<small>中石化</small></div>
+      <div class="partner">中国石油<small>中石油</small></div>
+      <div class="partner">中国海油<small>中海油</small></div>
+      <div class="partner">神华集团<small>国家能源集团旗下</small></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 联系方式 ===== -->
+<section class="section contact-section" id="contact">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="kicker" style="color:#7FDCE2">CONTACT · 联系我们</div>
+      <h2>期待与您合作</h2>
+      <p>欢迎就水处理设备选型、项目咨询与服务需求与我们联系。</p>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-5.3-7-11a7 7 0 0 1 14 0c0 5.7-7 11-7 11Z"/><circle cx="12" cy="10" r="2.6"/></svg>
+        <div><b>公司地址</b><span>安徽省合肥市高新区香樟大道 211 号香枫创意园 C 幢 12 楼 1201</span></div>
+      </div>
+      <div class="contact-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 5h16v14H4z"/><path d="M4 6l8 7 8-7"/></svg>
+        <div><b>电子邮箱</b><span class="pending">联系方式待补充</span></div>
+      </div>
+      <div class="contact-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 4h4l2 5-2.5 1.5a12 12 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2Z"/></svg>
+        <div><b>联系电话</b><span class="pending">联系方式待补充</span></div>
+      </div>
+      <div class="contact-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+        <div><b>营业时间</b><span>周一至周五 8:30 - 17:30</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== footer ===== -->
+<footer class="footer">
+  <div class="wrap">
+    <span><b>合肥三番水处理设备有限公司</b> · Hefei Sanfan Water Treatment Equipment Co., Ltd.</span>
+    <span>© 2004 - 2026 合肥三番水处理设备有限公司 版权所有</span>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var toggle=document.getElementById('navToggle');
+  var links=document.getElementById('navLinks');
+  toggle.addEventListener('click',function(){
+    var open=links.classList.toggle('open');
+    toggle.setAttribute('aria-expanded',open?'true':'false');
+  });
+  links.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click',function(){links.classList.remove('open');toggle.setAttribute('aria-expanded','false');});
+  });
+})();
+</script>
+</body>
+</html>
